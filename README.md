@@ -114,6 +114,22 @@ mvn spring-boot:run
 
 ---
 
+Ou, se preferir, utilize o script `start-ecommerce-kafka.sh` para iniciar todos os serviços automaticamente (incluindo Zookeeper e Kafka).
+
+Antes de executar, edite o script e ajuste a variável abaixo para o caminho onde o Kafka está instalado no seu sistema:
+
+```bash
+KAFKA_DIR=~/kafka
+```
+
+Depois, torne o script executável e execute:
+
+```bash
+chmod +x start-ecommerce-kafka.sh
+./start-ecommerce-kafka.sh
+```
+---
+
 ## Testes
 
 Você pode testar o sistema utilizando um cliente HTTP como Postman, Insomnia ou curl.
